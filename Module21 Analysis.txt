@@ -1,0 +1,37 @@
+﻿Module 21 DeepLearning
+
+
+Overview:
+
+
+The overall purpose of this analysis was to determine a satisfactory binary classifier that would predict above 75% whether applicants would be successful if funded by Alphabet Soup.
+
+
+Data Preprocessing:
+
+
+The target variables for this model were the ‘IS_SUCCESSFUL’ values which let us know which of the previous projects succeeded or not.
+
+
+The feature variables were everything else except for the ‘EIN’ values which were dropped.
+
+
+The reason that the ‘EIN’ was dropped and the other stayed was because that column seemed to be a less important identifier for this model.
+
+
+The Model
+
+
+For the specifics of the model I decided some things by chance and others to fit the model I had. I added 3 total layers with the first layer’s input_dim being dictated by the length of the X_train variable. For the activation layer I used the rectified linear activation function or relu for its high use and popularity in deep learning functions. 
+
+
+The model was able to achieve an accuracy of 76%. Satisfying the requirements for this assignment. 
+
+
+By adding back in the ‘NAME’ column to the feature variables I was able to get the necessary data points to increase the accuracy. 
+
+
+Summary:
+
+
+The overall results of the model were enough to satisfy the assignment. In the future perhaps with tweaks to how the ‘APPLICATION’, ‘CLASSIFICATION’ and ‘NAME’ were binned,  I could achieve a similar or better result. As is we have a satisfactory model that can predict with 76% accuracy whether or not a Alphabet Soup backed project will succeed.
